@@ -15,12 +15,12 @@ abstract Bytes(HaxeBytes) from HaxeBytes to HaxeBytes {
 	
 	public function new (length:Int, bytesData:BytesData) {
 		
-/*		#if js
+		#if js
 		this = new HaxeBytes (bytesData);
 		#else
 		this = new HaxeBytes (length, bytesData);
 		#end
-*/		
+		
 	}
 	
 	
