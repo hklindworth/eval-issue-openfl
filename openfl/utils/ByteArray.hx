@@ -289,7 +289,7 @@ abstract ByteArray(ByteArrayData) from ByteArrayData to ByteArrayData {
 		#if js
 		super (bytes.b.buffer);
 		#else
-		super (length, bytes.b);
+		super (length, bytes.getData());
 		#end
 		
 		__length = length;
