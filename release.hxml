@@ -1,4 +1,4 @@
--main Main 
+-main ApplicationMain 
 --macro openfl._internal.utils.ExtraParams.include()
 -cp openfl
 -D openfl=6.1.0
