@@ -276,7 +276,7 @@ abstract ByteArray(ByteArrayData) from ByteArrayData to ByteArrayData {
 	
 	
 	public function new (length:Int = 0) {
-		var bytes = Bytes.alloc (length);
+		/*var bytes = Bytes.alloc (length);
 		
 		#if sys
 		if (length > 0) {
@@ -290,7 +290,7 @@ abstract ByteArray(ByteArrayData) from ByteArrayData to ByteArrayData {
 		super (bytes.b.buffer);
 		#else
 		super (length, bytes.b);
-		#end
+		#end*/
 		
 		__length = length;
 		
@@ -810,12 +810,12 @@ abstract ByteArray(ByteArrayData) from ByteArrayData to ByteArrayData {
 	
 	private inline function __setData (bytes:Bytes):Void {
 		
-		b = bytes.b;
+		/*b = bytes.b;
 		__length = bytes.length;
 		
 		#if js
 		data = bytes.data;
-		#end
+		#end*/
 		
 	}
 	
